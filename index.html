@@ -4,136 +4,64 @@
 <head>
   <meta charset="utf-8">
   <title>Lab Official Site</title>
-
   <link rel="shortcut icon" href="public/favicon2.ico">
-  <!-- 動くをつける -->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <header id="header" class="wrapper">
-    <h1 class="site-title"><a href="index.html"><img src="src/photo/nekonekoneko.png"></a></h1>
+  <header id="header" class="wrapper" style="font-size:15px; text-align:center;">
     <nav>
       <ul>
         <li><a href="#Home">Home</a></li>
-        <li><a href="#Profile">Profile</a></li>
-        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#about">About</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <div id="mainvisual">
-      <img src="src/photo/12345.jpg" alt="photo">
-    </div>
+    <div id="mainvisual"> <img src="src/photo/12345.jpg" alt="photo"> </div>
 
     <section id="about" class="headline">
       <h2 class="section-title">About</h2>
       <div class="content">
         <div class="wrapper">
-          <div class="delayScroll">
-            <img src="src/photo/nekoneko.jpg">
-          </div>
+          <div class="delayScroll"> <img src="src/photo/nekoneko.jpg"> </div>
         </div>
         <div class="text">
           <h3 class="content-title">Lab</h3>
-          <p>こちらはLabが運営するメディアです。<br>
-            Web制作のために参考になればぜひ使ってください。</p>
+          <p>こちらはLabが運営するメディアです。<br> Web制作のために参考になればぜひ使ってください。</p>
         </div>
+      </div>
     </section>
 
-    <section id="hobby" class="headline">
-      <h2 id="Profile" class="section-title">プログラミングの世界</h2>
+    <section id="world" class="headline">
+      <h2 id="profile" section-title">プログラミングの世界</h2>
       <ul>
         <li>
-          <div class="delayScroll">
-            <img src="src/photo/onair.png">
-          </div>
+          <div class="delayScroll"> <img src="src/photo/onair.png"> </div>
           <h3>Web制作</h3>
-          <p>法人・個人向けにWebサイトを制作することです。 ホームページ制作やサイト制作とも呼ばれます。
-            Web制作を行うことで、コンテンツの発信や、自社サービス・アプリとの連携などが可能になります。</p>
+          <p>法人・個人向けにWebサイトを制作することです。 ホームページ制作やサイト制作とも呼ばれます。 Web制作を行うことで、コンテンツの発信や、自社サービス・アプリとの連携などが可能になります。</p>
         </li>
         <li>
-          <!-- <img src="img/bicycle2.jpg" alt="テキストテキストテキスト"> -->
-          <!-- <h3 class="content-title">タイトルタイトル</h3>
-            <p>テキストテキストテキスト</p>
-          </li> -->
-        <li>
-          <div class="delayScroll">
-            <img src="src/photo/ryori.png" alt="テキストテキストテキスト">
-          </div>
+          <div class="delayScroll"> <img src="src/photo/Design.jpg" alt="テキストテキストテキスト"> </div>
           <h3 class="content-title">Webデザイン</h3>
-          <p>自分が作りたいときに作る。レシピを調べて、アレンジをしていく。
-            イタリアンが作りやすい。フレンチなども予定したい。
-            </span>
-          </p>
+          <p>ウェブサイトやウェブアプリケーションの外観やユーザーインターフェース（UI）を計画し、構築するプロセスやスキルのことを行います。</p>
         </li>
       </ul>
     </section>
+
   </main>
 
-  <div class="contact-bg">
-    <div class="contact-area inner">
-      <!-- <p id="Contact" class="contact-message">Contact<br>
+  <h2 class="font_2" style="font-size:15px; text-align:center;"><a href="index.html">TOP</a></h2>
 
-      <div class="contact-inner">
-        <form method="post">
-          <table class="contact-table">
+  <footer id="footer">
+    <p>&copy; 2024 Profile</p>
+  </footer>
 
-
-
-            <tr class="table-list">
-              <th>
-                <label for="name">お名前<span class="essential">必須</span></label>
-              </th>
-              <td>
-                <input type="text" name="yourname" id="name" class="input-area" autocomplete="name">
-              </td>
-            </tr>
-
-
-
-            <tr class="table-list">
-              <th><label for="furigana">ふりがな<span class="essential">必須</span></label></th>
-              <td>
-                <input type="text" name="yourname" id="furigana" class="input-area">
-              </td>
-            </tr>
-
-            <tr class="table-list">
-              <th><label for="mail">メールアドレス<span class="essential">必須</span></label></th>
-              <td>
-                <input id="mail" type="email" name="mail" class="input-area" autocomplete="email">
-              </td>
-            </tr>
-
-
-
-            <tr class="table-list">
-              <th><label for="comment">お問い合わせ内容<span class="essential">必須</span></label></th>
-              <td>
-                <textarea id="comment" name="comment"></textarea>
-              </td>
-            </tr>
-
-          </table>
-        </form>
-
-        <input type="submit" value="送信する" class="button" onclick="location.href='complete.html'">
-
-
-      </div>
-    </div>
-  </div> -->
-
-      <footer id="footer">
-        <p>&copy; 2024 Profile</p>
-      </footer>
-    </div>
-    <!-- アニメーションを追加したい -->
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
