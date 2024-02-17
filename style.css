@@ -19,29 +19,6 @@ li {
   list-style: none;
 }
 
-.site-title {
-  width: 120px;
-  line-height: 1px;
-  padding: 10px 0;
-}
-
-.site-title a {
-  display: block;
-}
-
-.section-title {
-  display: inline-block;
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 60px;
-  border-bottom: solid 1px #383e45;
-}
-
-.content-title {
-  font-size: 25px;
-  margin: 10px 0;
-}
-
 .headline {
   max-width: 960px;
   margin: 0 auto 100px auto;
@@ -49,18 +26,13 @@ li {
   text-align: center;
 }
 
-.wrapper {
-  padding: 0 2%;
-}
-
 /*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
-#header {
-  display: flex;
+.wrapper {
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  padding: 0 2%;
 }
 
 #header ul {
@@ -109,13 +81,13 @@ About
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  /* margin-right: 100px; */
+  margin-right: 100px;
   opacity: 0;
 }
 
 .fadeUp {
   animation-name: fadeUpAnime;
-  animation-duration: 0.5s;
+  animation-duration: 0.9s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -154,22 +126,19 @@ About
 footer
 -------------------------------------------*/
 #footer {
-  font-size: 15px;
+  font-size: 10px;
   padding: 10px 0;
   text-align: center;
+}
+
+h2.font_2 a {
+  color: black;
 }
 
 /*-------------------------------------------
 SP
 -------------------------------------------*/
 @media screen and (max-width: 600px) {
-  /*-------------------------------------------
-  Mainvisual
-  -------------------------------------------*/
-  #mainvisual img {
-    height: calc(100vh - 60px);
-  }
-
   /*-------------------------------------------
   About
   -------------------------------------------*/
@@ -180,276 +149,4 @@ SP
   #about img {
     margin-right: 0;
   }
-
-  /*-------------------------------------------
-  プロフィール
-  -------------------------------------------*/
-  #Contact ul {
-    flex-direction: column;
-  }
-
-  #Contact li {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-}
-
-.contact-bg {
-  background: #ccffcc;
-  padding: 100px 0;
-  margin: 100px auto 0;
-}
-
-.contact-message {
-  text-align: center;
-  font-size: 50px;
-  line-height: 2;
-  margin-bottom: 50px;
-}
-
-.message-notice {
-  color: #c10811;
-  font-size: 14px;
-}
-
-.essential {
-  background: #c10811;
-  color: #fafafa;
-  font-size: 12px;
-  padding: 0 10px;
-  font-weight: normal;
-  margin-left: 10px;
-}
-
-.contact-area {
-  background: #fafafa;
-  padding: 90px;
-  margin: 100px auto;
-  width: 1000px;
-}
-
-.contact-table {
-  width: 100%;
-}
-
-.table-list {
-  display: flex;
-  justify-content: space-between;
-  font-family: "Noto Sans JP", sans-serif;
-  letter-spacing: 0.05em;
-  width: 100%;
-  margin-bottom: 40px;
-}
-
-.table-list th {
-  font-size: 13px;
-  font-weight: bold;
-  width: 250px;
-  text-align: left;
-}
-
-.table-list-address {
-  flex-wrap: wrap;
-}
-
-.table-list-address .input-area {
-  margin-bottom: 10px;
-}
-
-.input-area {
-  font-family: "Noto Sans JP", sans-serif;
-  letter-spacing: 0.05em;
-  padding: 0 10px;
-  border: none;
-  width: 550px;
-  height: 40px;
-  box-sizing: border-box;
-  border: 1px solid #c4c4c4;
-}
-
-.table-list td {
-  font-size: 13px;
-  width: calc(100% - 250px);
-}
-
-textarea {
-  border: none;
-  width: 550px;
-  height: 200px;
-  padding: 0;
-  border: 1px solid #c4c4c4;
-  resize: vertical;
-  /* 横方向のみサイズを固定する */
-}
-
-input[type="text"] {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.contact-area .text {
-  font-size: 13px;
-  text-align: center;
-  margin-bottom: 100px;
-}
-
-.contact-area .text a {
-  color: #000;
-  border-bottom: 1px solid #000;
-  transition: all 0.3s;
-  text-decoration: none;
-}
-
-.contact-area .text a:hover {
-  border-bottom: 1px solid #777;
-  padding-bottom: 5px;
-  color: #777;
-}
-
-.button {
-  box-sizing: border-box;
-  position: relative;
-  display: block;
-  margin: 30px auto 0;
-  background-color: #ccffcc;
-  cursor: pointer;
-  border: 1px solid #e4eeef;
-  color: #000;
-  text-align: center;
-  text-decoration: none;
-  line-height: 1.5;
-  outline: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.5s;
-  padding: 20px 100px;
-}
-
-.button:hover {
-  background: #ccffcc;
-  color: #000;
-  border: 1px solid #ffcc33;
-}
-
-@media (max-width: 1200px) {
-  .contact-area {
-    width: 80%;
-    padding: 60px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .contact-area {
-    padding: 50px 15px;
-  }
-
-  .table-list th {
-    width: 180px;
-  }
-
-  .table-list td {
-    width: 100%;
-  }
-
-  .input-area {
-    width: 500px;
-    height: 40px;
-  }
-
-  textarea {
-    width: 500px;
-    height: 200px;
-  }
-
-  .contact-message {
-    margin-bottom: 30px;
-  }
-
-  .contact-area .text {
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 834px) {
-  .contact-bg {
-    margin: 50px auto 0;
-    padding: 50px 0;
-  }
-
-  .contact-area {
-    margin: 50px auto;
-    padding: 50px 20px;
-  }
-
-  .check-box label {
-    width: 100%;
-  }
-
-  .input-area {
-    width: 100%;
-    height: 30px;
-  }
-
-  textarea {
-    width: 100%;
-    height: 200px;
-  }
-
-  .table-list {
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-  }
-
-  .table-list th {
-    font-size: 12px;
-    width: 200px;
-    margin-bottom: 10px;
-  }
-
-  .table-list td {
-    font-size: 12px;
-  }
-
-  .table-list td {
-    width: 100%;
-  }
-
-  .contact-message {
-    font-size: 13px;
-  }
-
-  .contact-area .text {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 640px) {
-  /* .contact-message {
-      text-align: left;
-  } */
-  .contact-message {
-    display: inline-block;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 60px;
-    border-bottom: solid 1px #383e45;
-  }
-
-  .contact-area .text {
-    text-align: left;
-  }
-}
-
-@media (max-width: 320px) {
-  .input-area {
-    width: 100%;
-  }
-
-  textarea {
-    width: 100%;
-  }
-}
-
-h2.font_2 a {
-  color: black;
 }
