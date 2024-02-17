@@ -1,10 +1,37 @@
-html {
-  font-size: 100%;
-}
-
 body {
   color: #383e45;
   font-size: 1rem;
+  position: relative;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav {
+  background-color: #191e24f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 15px 50px;
+  box-shadow: 10px 10px 10px;
+  /* color:(128, 128, 128, 0.548); */
+  color: white;
+  position: relative;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 a {
@@ -17,6 +44,27 @@ img {
 
 li {
   list-style: none;
+  width: 70px;
+  text-align: center;
+}
+li a {
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 20px 15px;
+  transition: 0.4s;
+  color: white;
+}
+li a:hover {
+  /* color: #f1c40f; */
+  /* border-bottom: 4px #f1c40f solid; */
+  /* transition: 0.4s; */
+  /* border: none; */
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.hide {
+  top: 70px;
 }
 
 .headline {
@@ -32,7 +80,6 @@ li {
 .wrapper {
   justify-content: space-between;
   align-items: center;
-  padding: 0 2%;
 }
 
 #header ul {
@@ -45,7 +92,7 @@ li {
 }
 
 #header li a {
-  color: #24292e;
+  color: white;
   font-size: 20px;
 }
 
@@ -138,7 +185,7 @@ h2.font_2 a {
 /*-------------------------------------------
 SP
 -------------------------------------------*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   /*-------------------------------------------
   About
   -------------------------------------------*/
@@ -149,4 +196,31 @@ SP
   #about img {
     margin-right: 0;
   }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: -10px;
+  }
+
+  nav {
+    position: relative;
+    padding: 15px 20px;
+  }
 }
+
+/* ul {
+  width: 100%; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -300px;
+  right: 0;
+  background-color: #f1c40f;
+  padding: 35px 0;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0px 5px 5px;
+} */
