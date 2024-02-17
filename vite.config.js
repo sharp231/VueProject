@@ -11,6 +11,13 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  }
-})
+    },
+  },
+  build: {
+    entryPoints: ['./index.html'],
+    // Vite v3 以降の場合
+    rollupOptions: {
+      input: ['./index.html'],
+    },
+  },
+});
