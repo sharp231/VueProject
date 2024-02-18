@@ -1,5 +1,4 @@
-<p align="center" style="background-color: white">
-ポートフォリオ
+<p align="center" >
   <a href="https://github.com/sharp231/VueProject">
   ポートフォリオをabuotからご覧いただけます
   </a>
