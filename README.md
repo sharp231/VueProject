@@ -1,11 +1,9 @@
 <p align="center" style="background-color: white">
 ポートフォリオ
-  <a href="vue-project-lovat.vercel.app">
+  <a href="https://github.com/sharp231/VueProject">
+  ポートフォリオをabuotからご覧いただけます
   </a>
 </p>
-
-
-
 # Vue
 
 This template should help get you started developing with Vue 3 in Vite.
