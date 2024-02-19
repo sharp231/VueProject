@@ -8,9 +8,9 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  resolve: {
-    alias: {
-      '@': './public/index.html',
-    }
-  }
+  // resolve: {
+  //   alias: {
+  //     '@': 'src/main.js',
+  //   }
+  // }
 })
