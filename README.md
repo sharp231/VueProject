@@ -1,6 +1,6 @@
 <p align="center" >
   <a href="https://github.com/sharp231/VueProject">
-  ポートフォリオを左上Abuotからご覧いただけます
+  ポートフォリオを右上Abuotからご覧いただけます
   </a>
 </p>
 # Vue
