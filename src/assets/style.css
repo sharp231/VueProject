@@ -38,8 +38,10 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
+.delayScroll img {
+  width: 250px;
+  height: 250px;
+  border-radius: 3%;
 }
 
 li {
@@ -191,6 +193,11 @@ SP
   -------------------------------------------*/
   #about .content {
     flex-direction: column;
+  }
+  .section-title {
+    font-size: 30px;
+    border-left: 0.3em solid rgb(0, 0, 0);
+    padding-bottom: 0.5em;
   }
 
   #about img {
