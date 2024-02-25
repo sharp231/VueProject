@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="ja">
 
+<!-- vueコンポーネント 
+  vueのローカルホストでvueが動かされる
+vueのインポートがうまくいかないので改善していく。バージョン？コード構成なのか-->
+<!-- <script src="https://unpkg.com/vue@next"></script>
+<script type="module">
+  import { createApp } from 'vue'
+  import App from './src/App.vue'
+
+  createApp(App).mount('#app')
+</script> -->
+
 <head>
   <meta charset="utf-8">
   <title>Lab Official Site</title>
-  <link rel="shortcut icon" href="/src/photo/favi.ico">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="/src/assets/favi.ico">
+  <link rel="stylesheet" type="text/css" href="/src/assets/style.css">
 </head>
 
 <body>
@@ -15,19 +26,19 @@
       <ul id="nav-links">
         <li><a href="#Home" class="links">Home</a></li>
         <li><a href="#about" class="links">About</a></li>
-        <li><a href="contact.html" class="links">Contact</a></li>
+        <li><a href="/public/contact.html" class="links">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <div id="mainvisual"> <img src="/src/photo/12345.jpg" alt="photo"> </div>
+    <div id="mainvisual"> <img src="/src/assets/12345.jpg" alt="photo"> </div>
 
     <section id="about" class="headline">
       <h2 class="section-title">About</h2>
       <div class="content">
         <div class="wrapper">
-          <div class="delayScroll"> <img src="/src/photo/nekoneko.jpg" alt="neko"> </div>
+          <div class="delayScroll"> <img src="/src/assets/nekoneko.jpg" alt="neko"> </div>
         </div>
         <div class="text">
           <h3 class="content-title">Lab</h3>
@@ -40,12 +51,12 @@
       <h2 id="profile" class="section-title">プログラミングの世界</h2>
       <ul>
         <li>
-          <div class="delayScroll"> <img src="/src/photo/onair.jpg" alt="on air"> </div>
+          <div class="delayScroll"> <img src="/src/assets/onair.jpg" alt="on air"> </div>
           <h3 class="content-title">Web制作</h3>
           <p>法人・個人向けにWebサイトを制作することです。 ホームページ制作やサイト制作とも呼ばれます。 Web制作を行うことで、コンテンツの発信や、自社サービス・アプリとの連携などが可能になります。</p>
         </li>
         <li>
-          <div class="delayScroll"> <img src="/src/photo/Design.jpg" alt="web design"> </div>
+          <div class="delayScroll"> <img src="/src/assets/Design.jpg" alt="web design"> </div>
           <h3 class="content-title">Webデザイン</h3>
           <p>ウェブサイトやウェブアプリケーションの外観やユーザーインターフェース（UI）を計画し、構築するプロセスやスキルのことを行います。</p>
         </li>
