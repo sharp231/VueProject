@@ -6,7 +6,9 @@ import vue from "@vitejs/plugin-vue";
 // https://vitejs.dev/config/
 export default defineConfig({
   // root: "./public",
-  outDir: 'public/dist',
+  build: {
+    outDir: "dist",
+  },
   plugins: [vue()],
   resolve: {
     alias: {
