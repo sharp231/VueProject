@@ -1,47 +1,31 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+﻿<script setup>
+import AboutSection from "./components/AboutSection.vue";
+import AppFooter from "./components/AppFooter.vue";
+import AppHeader from "./components/AppHeader.vue";
+import ContactSection from "./components/ContactSection.vue";
+import HeroSection from "./components/HeroSection.vue";
+import TopicCards from "./components/TopicCards.vue";
+import { useSectionNavigation } from "./composables/useSectionNavigation";
+import { siteContent } from "./data/siteContent";
+
+const sectionIds = siteContent.navigation.map((link) => link.target);
+const { activeSectionId, navigateTo } = useSectionNavigation(sectionIds);
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+  <AppHeader
+    :site-name="siteContent.siteName"
+    :links="siteContent.navigation"
+    :active-section-id="activeSectionId"
+    @navigate="navigateTo"
+  />
 
   <main>
-    <TheWelcome />
+    <HeroSection :hero="siteContent.hero" @navigate="navigateTo" />
+    <AboutSection :about="siteContent.about" />
+    <TopicCards :topics="siteContent.topics" />
+    <ContactSection :contact="siteContent.contact" />
   </main>
+
+  <AppFooter :copyright="siteContent.footer.copyright" @back-to-top="navigateTo('home')" />
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
